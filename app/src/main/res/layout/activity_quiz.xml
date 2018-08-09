@@ -7,18 +7,16 @@
     tools:context="com.bignerdranch.android.geoquiz.QuizActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="282dp"
-        android:layout_height="27dp"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="195dp" />
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+         />
 
     <LinearLayout
         android:layout_width="242dp"
         android:layout_height="57dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="267dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/true_button"
@@ -27,8 +25,7 @@
             android:layout_weight="1"
             android:text="True"
             android:textAlignment="center"
-            tools:layout_editor_absoluteX="106dp"
-            tools:layout_editor_absoluteY="278dp" />
+             />
 
         <Button
             android:id="@+id/false_button"
@@ -36,15 +33,20 @@
             android:layout_height="54dp"
             android:layout_weight="1"
             android:text="False"
-            tools:layout_editor_absoluteX="236dp"
-            tools:layout_editor_absoluteY="278dp" />
+            />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next_button"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="383dp"
         android:layout_height="642dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="-10dp"></LinearLayout>
+        ></LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
